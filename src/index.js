@@ -12,6 +12,8 @@ import UseReducer from './components/UseReducer'
 import UseMemo from './components/hooks_useMemo/index'
 import Promise from './components/promise/index'
 import Async from './components/async/await/index'
+import Chaining from './components/chaining/index'
+import Closure from './components/closure/index'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -24,9 +26,12 @@ ReactDOM.render(
     {/* <UseCallback /> */}
     {/* <UseMemo /> */}
     {/* <Promise /> */}
+    {/* <Async /> */}
+    {/* <Chaining /> */}
+    <Closure />
     {/* <App /> */}
     {/* <Online /> */}
-    <Async />
+
   </React.StrictMode>,
   document.getElementById('root')
 );
