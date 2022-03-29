@@ -10,6 +10,8 @@ import UseRef3 from './components/UseRef3'
 import UseCallback from './components/hooks_useCallback/index'
 import UseReducer from './components/UseReducer'
 import UseMemo from './components/hooks_useMemo/index'
+import Promise from './components/promise/index'
+import Async from './components/async/await/index'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -20,9 +22,11 @@ ReactDOM.render(
     {/* <UseRef3 /> */}
     {/* <UseReducer /> */}
     {/* <UseCallback /> */}
-    <UseMemo />
+    {/* <UseMemo /> */}
+    {/* <Promise /> */}
     {/* <App /> */}
     {/* <Online /> */}
+    <Async />
   </React.StrictMode>,
   document.getElementById('root')
 );
@@ -30,4 +34,4 @@ ReactDOM.render(
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// reportWebVitals();
