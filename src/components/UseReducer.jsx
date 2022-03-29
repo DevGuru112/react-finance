@@ -16,7 +16,7 @@ const initialTodos = [
 const reducer = (state, action) => {
     switch (action.type) {
         case "COMPLETE":
-            return state.map(() => {
+            return state.map((todo) => {
                 if (todo.id === action.id) {
                     return { ...todo, complete: !todo.complete };
                 } else {
@@ -37,7 +37,7 @@ const Todos = () => {
 
     return (
         <>
-            {todos.map(() => (
+            {todos.map((todo) => (
                 <div key={todo.id}>
                     <label>
                         <input
