@@ -7,7 +7,9 @@ import UseContext from './components/UseContext';
 import UseRef from './components/UseRef'
 import UseRef2 from './components/UseRef2'
 import UseRef3 from './components/UseRef3'
+import UseCallback from './components/hooks_useCallback/index'
 import UseReducer from './components/UseReducer'
+import UseMemo from './components/hooks_useMemo/index'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -16,7 +18,9 @@ ReactDOM.render(
     {/* <UseRef /> */}
     {/* <UseRef2 /> */}
     {/* <UseRef3 /> */}
-    <UseReducer />
+    {/* <UseReducer /> */}
+    {/* <UseCallback /> */}
+    <UseMemo />
     {/* <App /> */}
     {/* <Online /> */}
   </React.StrictMode>,
