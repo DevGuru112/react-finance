@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 
 const App = () => {
     const title = [
+        'MernStack',
         'UseContext',
         'UseRef',
         'UseRef2',
@@ -15,7 +16,6 @@ const App = () => {
         'Chaining',
         'Closure',
         'Generator',
-        'MernStack'
     ];
     return (
         <>
@@ -23,7 +23,10 @@ const App = () => {
             {
                 title.map((item, index) => (
                     <div key={index}>
-                        <Link to={`/${item}`}>{item}</Link>
+                        {
+                            item == 'MernStack' ? <Link to={`/${item}`} style={{textDecoration: 'none'}}><h2 style={{color: "#d340fe"}}>{item}</h2></Link> : <Link to={`/${item}`}>{item}</Link>
+                        }
+                        
                     </div>
                 ))
             }
